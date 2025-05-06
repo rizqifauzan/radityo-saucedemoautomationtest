@@ -14,10 +14,12 @@ public class LoginPage {
 
 
     public void setInputUsername(String username){
+        webDriver.findElement(inputUsername).clear();
         webDriver.findElement(inputUsername).sendKeys(username);
     }
 
     public void setInputPassword(String password){
+        webDriver.findElement(inputPassword).clear();
         webDriver.findElement(inputPassword).sendKeys(password);
         webDriver.findElement(buttonLogin).click();
     }
