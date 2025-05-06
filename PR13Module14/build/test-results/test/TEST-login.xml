@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="login" tests="2" skipped="0" failures="1" errors="0" timestamp="2025-05-06T05:47:29" hostname="RADITYOLENOVOLE" time="0.364">
+  <properties/>
+  <testcase name="Login with valid input" classname="login" time="0.334"/>
+  <testcase name="Login with invalid input" classname="login" time="0.03">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#user\-name&quot;}&#10;  (Session info: chrome=135.0.7049.116)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.32.0', revision: 'd17c8aa950'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [9b26ab75134260d8f317a10cf969c618, findElement {using=id, value=user-name}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\rhari\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54197/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9b26ab75134260d8f317a10cf969c618" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#user\-name&quot;}
+  (Session info: chrome=135.0.7049.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9b26ab75134260d8f317a10cf969c618, findElement {using=id, value=user-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\rhari\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54197/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b26ab75134260d8f317a10cf969c618
+	at java.base@21.0.5/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@21.0.5/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base@21.0.5/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at app//pages.LoginPage.isPageIsDisplayed(LoginPage.java:30)
+	at app//stepDefinitions.LoginStepDef.onTheLoginPage(LoginStepDef.java:17)
+	at ✽.user on the login page(file:///D:/QA%20AUTOMATION%20JAY%20JAY%20Belajar/PraktikumUIWebAutomationJUnit/PR13Module14/src/test/resources/features/login.feature:13)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+@login @valid-login
+Scenario: Login with valid input              ?[90m# src/test/resources/features/login.feature:5?[0m
+  ?[32mGiven ?[0m?[32muser on the login page?[0m                ?[90m# stepDefinitions.LoginStepDef.onTheLoginPage()?[0m
+  ?[32mWhen ?[0m?[32muser input ?[0m?[32m?[1m"standard_user"?[0m?[32m as username?[0m ?[90m# stepDefinitions.LoginStepDef.inputUsername(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32muser input ?[0m?[32m?[1m"secret_sauce"?[0m?[32m as password?[0m   ?[90m# stepDefinitions.LoginStepDef.inputPassword(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32muser will be redirected to home page?[0m   ?[90m# stepDefinitions.LoginStepDef.verifyHomepage()?[0m
+
+@login @invalid-login_wrongpassw
+Scenario: Login with invalid input                              ?[90m# src/test/resources/features/login.feature:12?[0m
+  ?[31mGiven ?[0m?[31muser on the login page?[0m                                  ?[90m# stepDefinitions.LoginStepDef.onTheLoginPage()?[0m
+      ?[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#user\-name"}
+        (Session info: chrome=135.0.7049.116)
+      For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+      Build info: version: '4.32.0', revision: 'd17c8aa950'
+      System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Command: [9b26ab75134260d8f317a10cf969c618, findElement {using=id, value=user-name}]
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\rhari\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54197/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+      Session ID: 9b26ab75134260d8f317a10cf969c618
+      	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+      	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+      	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+      	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+      	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+      	at pages.LoginPage.isPageIsDisplayed(LoginPage.java:30)
+      	at stepDefinitions.LoginStepDef.onTheLoginPage(LoginStepDef.java:17)
+      	at ✽.user on the login page(file:///D:/QA%20AUTOMATION%20JAY%20JAY%20Belajar/PraktikumUIWebAutomationJUnit/PR13Module14/src/test/resources/features/login.feature:13)?[0m
+  ?[36mWhen ?[0m?[36muser input ?[0m?[36m?[1m"standard_user"?[0m?[36m as username?[0m                   ?[90m# stepDefinitions.LoginStepDef.inputUsername(java.lang.String)?[0m
+  ?[36mAnd ?[0m?[36muser input ?[0m?[36m?[1m"secret_chicken"?[0m?[36m as invalid password?[0m           ?[90m# stepDefinitions.LoginStepDef.userInputAsInvalidpassword(java.lang.String)?[0m
+  ?[36mThen ?[0m?[36muser will be redirected to login page with error message?[0m ?[90m# stepDefinitions.LoginStepDef.userWillBeRedirectedToLoginPage()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
